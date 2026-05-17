@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Runtime credential store (hashed passwords + bearer tokens)
+backend/users.json
+
+# Test artifacts
+test_audio/*.wav
+test_audio/*.mp3
+test_audio/*.m4a
+temp/
+
+# Internal QA reports (port 8000 era — README has the canonical info now)
+reports/
+
+# Node / Expo
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Model caches (HuggingFace, faster-whisper)
+.cache/
+models/

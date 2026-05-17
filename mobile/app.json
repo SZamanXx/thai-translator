@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Thai Translator V3",
+    "slug": "thai-translator",
+    "version": "3.0.0",
+    "sdkVersion": "54.0.0",
+    "scheme": "thaitranslator",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "backgroundColor": "#0f0f1a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.thaitranslator.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to microphone for speech translation"
+      }
+    },
+    "android": {
+      "package": "com.thaitranslator.app",
+      "permissions": ["RECORD_AUDIO"],
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "thaitranslator"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Thai Translator to access your microphone for speech translation."
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+# FastAPI & WebSocket
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+websockets==12.0
+python-multipart==0.0.6
+
+# AI Models - CUDA optimized
+faster-whisper==1.0.1
+ctranslate2==4.1.0
+transformers==4.37.0
+accelerate==0.26.0
+
+# PyTorch with CUDA 12.x (for RTX 5090)
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.5.0+cu124
+torchaudio==2.5.0+cu124
+
+# Audio processing
+scipy==1.12.0
+numpy==1.26.3
+soundfile==0.12.1
+pydub==0.25.1
